@@ -2,9 +2,9 @@ import Foundation
 
 struct Contact {
     let name: String
-    let zipCode: Int
+    let postalCode: Int
     var isFavorite = false
     
-    var displayZipCode: String { "Zip Code: \(String(zipCode))" }
+    var displayPostalCode: String { "Postal Code: \(String(postalCode))" }
 }
 

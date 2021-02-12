@@ -2,10 +2,10 @@ import Foundation
 
 struct AddressBook {
     private var contacts = [
-        Contact(name: "Alexis", zipCode: 12429),
-        Contact(name: "Ben", zipCode: 11377),
-        Contact(name: "Bhaskar", zipCode: 14204),
-        Contact(name: "Galina", zipCode: 13029)
+        Contact(name: "Alexis", postalCode: 12429),
+        Contact(name: "Ben", postalCode: 11377),
+        Contact(name: "Bhaskar", postalCode: 14204),
+        Contact(name: "Galina", postalCode: 13029)
     ]
     
     mutating func toggleFavorite(atIndex index: Int) {
@@ -22,6 +22,7 @@ struct AddressBook {
     
     var numberOfFavorites: Int {
         var count = 0
+        
         for contact in contacts {
             if contact.isFavorite {
                 count += 1

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddressBookView: View {
     @StateObject var viewModel = AddressBookViewModel()
+    @State var displayFavoriteCount = true
     
     var body: some View {
         VStack {
@@ -17,8 +18,11 @@ struct AddressBookView: View {
             Spacer()
             ContactsView(addressBook: $viewModel.addressBook)
             Spacer()
-            FavoritesCountView(favoritesCount: viewModel.favoritedContactCount)
-            Spacer()
+            if displayFavoriteCount {
+                FavoritesCountView(favoritesCount: viewModel.favoritedContactCount)
+            }
+            Toggle("Display number of favorites", isOn: $displayFavoriteCount.animation())
+                .padding()
         }
     }
 }
@@ -44,7 +48,7 @@ struct ContactView: View {
     var body: some View {
         VStack {
             Text(contact.name)
-            Text(contact.displayZipCode)
+            Text(contact.displayPostalCode)
                 .font(.caption2)
         }
     }
@@ -72,7 +76,6 @@ struct FavoritesCountView: View {
                 .padding()
             Spacer()
         }
-
     }
 }
 
