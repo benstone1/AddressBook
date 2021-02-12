@@ -11,8 +11,6 @@
 		F245C5DD25D6F5380070D5FD /* AddressBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F245C5DC25D6F5380070D5FD /* AddressBookView.swift */; };
 		F245C5DF25D6F53B0070D5FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F245C5DE25D6F53B0070D5FD /* Assets.xcassets */; };
 		F245C5E225D6F53B0070D5FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F245C5E125D6F53B0070D5FD /* Preview Assets.xcassets */; };
-		F245C5ED25D6F53C0070D5FD /* AddressBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F245C5EC25D6F53C0070D5FD /* AddressBookTests.swift */; };
-		F245C5F825D6F53C0070D5FD /* AddressBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F245C5F725D6F53C0070D5FD /* AddressBookUITests.swift */; };
 		F245C60925D6F5FE0070D5FD /* AddressBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = F245C60825D6F5FE0070D5FD /* AddressBook.swift */; };
 		F245C60E25D6F61A0070D5FD /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F245C60D25D6F61A0070D5FD /* Contact.swift */; };
 		F245C61325D6F63B0070D5FD /* AddressBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F245C61225D6F63B0070D5FD /* AddressBookViewModel.swift */; };
@@ -43,11 +41,7 @@
 		F245C5E125D6F53B0070D5FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F245C5E325D6F53B0070D5FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F245C5E825D6F53C0070D5FD /* AddressBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F245C5EC25D6F53C0070D5FD /* AddressBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookTests.swift; sourceTree = "<group>"; };
-		F245C5EE25D6F53C0070D5FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F245C5F325D6F53C0070D5FD /* AddressBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F245C5F725D6F53C0070D5FD /* AddressBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookUITests.swift; sourceTree = "<group>"; };
-		F245C5F925D6F53C0070D5FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F245C60825D6F5FE0070D5FD /* AddressBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBook.swift; sourceTree = "<group>"; };
 		F245C60D25D6F61A0070D5FD /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		F245C61225D6F63B0070D5FD /* AddressBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookViewModel.swift; sourceTree = "<group>"; };
@@ -82,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				F245C5D925D6F5380070D5FD /* AddressBook */,
-				F245C5EB25D6F53C0070D5FD /* AddressBookTests */,
-				F245C5F625D6F53C0070D5FD /* AddressBookUITests */,
 				F245C5D825D6F5380070D5FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,24 +111,6 @@
 				F245C5E125D6F53B0070D5FD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		F245C5EB25D6F53C0070D5FD /* AddressBookTests */ = {
-			isa = PBXGroup;
-			children = (
-				F245C5EC25D6F53C0070D5FD /* AddressBookTests.swift */,
-				F245C5EE25D6F53C0070D5FD /* Info.plist */,
-			);
-			path = AddressBookTests;
-			sourceTree = "<group>";
-		};
-		F245C5F625D6F53C0070D5FD /* AddressBookUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F245C5F725D6F53C0070D5FD /* AddressBookUITests.swift */,
-				F245C5F925D6F53C0070D5FD /* Info.plist */,
-			);
-			path = AddressBookUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F245C5ED25D6F53C0070D5FD /* AddressBookTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F245C5F825D6F53C0070D5FD /* AddressBookUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
