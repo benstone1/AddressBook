@@ -33,8 +33,12 @@ struct ContactsView: View {
     var body: some View {
         ForEach(0..<addressBook.numberOfContacts) { index in
             HStack {
-                ContactView(contact: addressBook.contact(atIndex: index))
-                FavoriteButton(addressBook: $addressBook, contactIndex: index)
+                ContactInfoView(contact: addressBook.contact(atIndex: index))
+                Button(action: {
+                    addressBook.toggleFavorite(atIndex: index)
+                }) {
+                    addressBook.contactIsFavorite(atIndex: index) ? Image(systemName: "star.fill") : Image(systemName: "star")
+                }
             }
             .padding()
             .border(Color.black, width: 1)
@@ -42,7 +46,7 @@ struct ContactsView: View {
     }
 }
 
-struct ContactView: View {
+struct ContactInfoView: View {
     let contact: Contact
     
     var body: some View {
@@ -50,19 +54,6 @@ struct ContactView: View {
             Text(contact.name)
             Text(contact.displayPostalCode)
                 .font(.caption2)
-        }
-    }
-}
-
-struct FavoriteButton: View {
-    @Binding var addressBook: AddressBook
-    let contactIndex: Int
-    
-    var body: some View {
-        Button(action: {
-            addressBook.toggleFavorite(atIndex: contactIndex)
-        }) {
-            addressBook.contactIsFavorite(atIndex: contactIndex) ? Image(systemName: "star.fill") : Image(systemName: "star")
         }
     }
 }
