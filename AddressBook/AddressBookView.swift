@@ -1,6 +1,6 @@
 //
-//  ContentView.swift
-//  AddressBook
+//  AddressBookView.swift
+//  AddressBookView
 //
 //  Created by Ben Stone on 2/12/21.
 //
