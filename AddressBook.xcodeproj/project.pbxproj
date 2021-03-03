@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F23A6D9A25F01D5E00494ABD /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A6D9925F01D5E00494ABD /* ContactsView.swift */; };
+		F23A6DA225F01DFF00494ABD /* ContactInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A6DA125F01DFF00494ABD /* ContactInfoView.swift */; };
+		F23A6DA725F01E3700494ABD /* FavoritesCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A6DA625F01E3700494ABD /* FavoritesCountView.swift */; };
 		F245C5DB25D6F5380070D5FD /* AddressBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F245C5DA25D6F5380070D5FD /* AddressBookApp.swift */; };
 		F245C5DD25D6F5380070D5FD /* AddressBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F245C5DC25D6F5380070D5FD /* AddressBookView.swift */; };
 		F245C5DF25D6F53B0070D5FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F245C5DE25D6F53B0070D5FD /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F23A6D9925F01D5E00494ABD /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		F23A6DA125F01DFF00494ABD /* ContactInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoView.swift; sourceTree = "<group>"; };
+		F23A6DA625F01E3700494ABD /* FavoritesCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCountView.swift; sourceTree = "<group>"; };
 		F245C5D725D6F5380070D5FD /* AddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F245C5DA25D6F5380070D5FD /* AddressBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookApp.swift; sourceTree = "<group>"; };
 		F245C5DC25D6F5380070D5FD /* AddressBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookView.swift; sourceTree = "<group>"; };
@@ -72,6 +78,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F23A6DAB25F01F4E00494ABD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F245C5DC25D6F5380070D5FD /* AddressBookView.swift */,
+				F23A6DA625F01E3700494ABD /* FavoritesCountView.swift */,
+				F23A6DA125F01DFF00494ABD /* ContactInfoView.swift */,
+				F23A6D9925F01D5E00494ABD /* ContactsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F23A6DAF25F01F5900494ABD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F245C60825D6F5FE0070D5FD /* AddressBook.swift */,
+				F245C60D25D6F61A0070D5FD /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F23A6DB325F01F6000494ABD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F245C61225D6F63B0070D5FD /* AddressBookViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F245C5CE25D6F5380070D5FD = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +128,9 @@
 			isa = PBXGroup;
 			children = (
 				F245C5DA25D6F5380070D5FD /* AddressBookApp.swift */,
-				F245C5DC25D6F5380070D5FD /* AddressBookView.swift */,
-				F245C60825D6F5FE0070D5FD /* AddressBook.swift */,
-				F245C60D25D6F61A0070D5FD /* Contact.swift */,
-				F245C61225D6F63B0070D5FD /* AddressBookViewModel.swift */,
+				F23A6DAB25F01F4E00494ABD /* Views */,
+				F23A6DAF25F01F5900494ABD /* Models */,
+				F23A6DB325F01F6000494ABD /* ViewModel */,
 				F245C5DE25D6F53B0070D5FD /* Assets.xcassets */,
 				F245C5E325D6F53B0070D5FD /* Info.plist */,
 				F245C5E025D6F53B0070D5FD /* Preview Content */,
@@ -243,8 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F245C61325D6F63B0070D5FD /* AddressBookViewModel.swift in Sources */,
+				F23A6DA225F01DFF00494ABD /* ContactInfoView.swift in Sources */,
+				F23A6DA725F01E3700494ABD /* FavoritesCountView.swift in Sources */,
 				F245C60E25D6F61A0070D5FD /* Contact.swift in Sources */,
 				F245C60925D6F5FE0070D5FD /* AddressBook.swift in Sources */,
+				F23A6D9A25F01D5E00494ABD /* ContactsView.swift in Sources */,
 				F245C5DD25D6F5380070D5FD /* AddressBookView.swift in Sources */,
 				F245C5DB25D6F5380070D5FD /* AddressBookApp.swift in Sources */,
 			);

@@ -10,7 +10,7 @@ import Foundation
 struct AddressBook {
     private var contacts = [
         Contact(name: "Alexis", postalCode: 12429),
-        Contact(name: "Ben", postalCode: 11377),
+        Contact(name: "Ben", postalCode: 10012),
         Contact(name: "Bhaskar", postalCode: 14204),
         Contact(name: "Galina", postalCode: 13029)
     ]
